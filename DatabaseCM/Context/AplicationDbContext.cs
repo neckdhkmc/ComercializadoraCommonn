@@ -30,6 +30,10 @@ namespace DatabaseCM.Context
 
         public DbSet<TipoUsuario> tipoUsuarios { get; set; }
 
+        public DbSet<Categoria> categorias { get; set; }
+
+        public DbSet<Productos> productos { get; set; }
+
 
         #endregion
 

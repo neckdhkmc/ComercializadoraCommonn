@@ -53,15 +53,21 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Constants\EstatusConstans.cs" />
-    <Compile Include="Constants\RolConstants.cs" />
+    <Compile Include="Constants\TiposUsuariosConstants.cs" />
     <Compile Include="Context\AplicationDbContext.cs" />
-    <Compile Include="Migrations\202202232233295_Inicial.cs" />
-    <Compile Include="Migrations\202202232233295_Inicial.Designer.cs">
-      <DependentUpon>202202232233295_Inicial.cs</DependentUpon>
+    <Compile Include="Migrations\202202240126527_Inicial.cs" />
+    <Compile Include="Migrations\202202240126527_Inicial.Designer.cs">
+      <DependentUpon>202202240126527_Inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202240344138_createProductos_Categorias.cs" />
+    <Compile Include="Migrations\202202240344138_createProductos_Categorias.Designer.cs">
+      <DependentUpon>202202240344138_createProductos_Categorias.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\TableDB\Categoria.cs" />
     <Compile Include="Models\TableDB\estatus.cs" />
     <Compile Include="Models\TableDB\Permisos.cs" />
+    <Compile Include="Models\TableDB\Productos.cs" />
     <Compile Include="Models\TableDB\Rol.cs" />
     <Compile Include="Models\TableDB\RolPermiso.cs" />
     <Compile Include="Models\TableDB\TipoUsuario.cs" />
@@ -73,8 +79,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202202232233295_Inicial.resx">
-      <DependentUpon>202202232233295_Inicial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202202240126527_Inicial.resx">
+      <DependentUpon>202202240126527_Inicial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202240344138_createProductos_Categorias.resx">
+      <DependentUpon>202202240344138_createProductos_Categorias.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

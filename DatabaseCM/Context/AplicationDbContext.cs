@@ -34,6 +34,13 @@ namespace DatabaseCM.Context
 
         public DbSet<Productos> productos { get; set; }
 
+        public DbSet<Ventas> ventas { get; set; }
+
+        public DbSet<Provedores> Provedores { get; set; }
+
+        public DbSet<ProvedorProducto> ProvedorProductos { get; set; }
+
+
 
         #endregion
 

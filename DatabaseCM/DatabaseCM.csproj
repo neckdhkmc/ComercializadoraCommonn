@@ -63,15 +63,26 @@
     <Compile Include="Migrations\202202240344138_createProductos_Categorias.Designer.cs">
       <DependentUpon>202202240344138_createProductos_Categorias.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202202240403251_ventas.cs" />
+    <Compile Include="Migrations\202202240403251_ventas.Designer.cs">
+      <DependentUpon>202202240403251_ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202202240414099_provedor_productos.cs" />
+    <Compile Include="Migrations\202202240414099_provedor_productos.Designer.cs">
+      <DependentUpon>202202240414099_provedor_productos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\TableDB\Categoria.cs" />
     <Compile Include="Models\TableDB\estatus.cs" />
     <Compile Include="Models\TableDB\Permisos.cs" />
     <Compile Include="Models\TableDB\Productos.cs" />
+    <Compile Include="Models\TableDB\Provedores.cs" />
+    <Compile Include="Models\TableDB\ProvedorProducto.cs" />
     <Compile Include="Models\TableDB\Rol.cs" />
     <Compile Include="Models\TableDB\RolPermiso.cs" />
     <Compile Include="Models\TableDB\TipoUsuario.cs" />
     <Compile Include="Models\TableDB\Usuarios.cs" />
+    <Compile Include="Models\TableDB\Ventas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -84,6 +95,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202202240344138_createProductos_Categorias.resx">
       <DependentUpon>202202240344138_createProductos_Categorias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202240403251_ventas.resx">
+      <DependentUpon>202202240403251_ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202202240414099_provedor_productos.resx">
+      <DependentUpon>202202240414099_provedor_productos.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

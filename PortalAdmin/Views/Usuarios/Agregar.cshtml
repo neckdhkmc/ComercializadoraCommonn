@@ -1,0 +1,86 @@
+﻿@using PortalAdmin.DTO
+@model UsuariosDTO
+@{
+    ViewBag.Title = "Agregar";
+}
+
+<h2>Agregar</h2>
+
+<div class="col-lg-12">
+    @using (Html.BeginForm("Agregar", "Usuarios", FormMethod.Post, new { @id = "frmAgregar" }))
+    {
+    <div>
+
+        <div class="col-lg-12">
+            <i class="fa fa-male" aria-hidden="true"></i>
+            @Html.LabelFor(p => p.Nombre)
+            @Html.TextBoxFor(p => p.Nombre, new { @class = "form-control" })
+
+
+        </div>
+        <div>
+            @Html.Hidden("nul2");
+
+        </div>
+
+        <div class="col-lg-6">
+            <i class="fa fa-male" aria-hidden="true"></i>
+            @Html.LabelFor(p => p.NickName)
+            @Html.TextBoxFor(p => p.NickName, new { @class = "form-control" })
+
+        </div>
+        <div class="col-lg-6">
+            <i class="fa fa-key" aria-hidden="true"></i>
+            @Html.Label("Contraseña")
+            @Html.PasswordFor(p => p.Pasword, new { @class = "form-control" })
+
+        </div>
+        <div>
+            @Html.Hidden("nul2");
+
+        </div>
+
+
+        <div class="col-lg-6">
+            <i class="fa fa-users" aria-hidden="true"></i>
+            @Html.LabelFor(p => p.NumEmpleado)
+            @Html.TextBoxFor(p => p.NumEmpleado, new { @class = "form-control" })
+
+        </div>
+        <div class="col-lg-6">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            @Html.LabelFor(p => p.Email)
+            @Html.TextBoxFor(p => p.Email, new { @class = "form-control" })
+        </div>
+        <div>
+            @Html.Hidden("nul2");
+
+        </div>
+
+        <div class="col-lg-6">
+            <i class="fa fa-university" aria-hidden="true"></i>
+            @Html.LabelFor(p => p.Telfono)
+            @Html.TextBoxFor(p => p.Telfono, new { @class = "form-control" })
+        </div>        
+        <div>
+            @Html.Hidden("nul2");
+
+        </div>
+        <div class="col-lg-6">
+
+            <input type="submit" class="btn btn-info btn-lg btn-block" value="Registrar" />@*agregamos la funcion agregar para guardar cambios desde el boton del modal*@
+        </div>
+
+        <div class="col-lg-6">
+            @Html.ActionLink("Regresar", "Index", "PantallaPrincipal", null, new { @class = "btn btn-danger btn-lg btn-block" })
+        </div>
+
+
+    </div>
+
+
+
+    }
+
+
+</div>

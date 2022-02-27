@@ -55,6 +55,7 @@
     <Compile Include="Constants\EstatusConstans.cs" />
     <Compile Include="Constants\TiposUsuariosConstants.cs" />
     <Compile Include="Context\AplicationDbContext.cs" />
+    <Compile Include="DTO\UsuariosDTO.cs" />
     <Compile Include="Migrations\202202240126527_Inicial.cs" />
     <Compile Include="Migrations\202202240126527_Inicial.Designer.cs">
       <DependentUpon>202202240126527_Inicial.cs</DependentUpon>

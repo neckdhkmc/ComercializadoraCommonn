@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4fc8e672-7f21-48e8-b9f7-e07eb47f5d7f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:51428/CatalagosService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CatalagosService.disco" MetadataType="Disco" ID="56616e04-ffd2-45a2-a78d-dccd78f29f2f" SourceId="1" SourceUrl="http://localhost:51428/CatalagosService.svc?disco" />
+    <MetadataFile FileName="CatalagosService.xsd" MetadataType="Schema" ID="e2b7146b-c8c5-44bd-a491-574349237a8d" SourceId="1" SourceUrl="http://localhost:51428/CatalagosService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CatalagosService.wsdl" MetadataType="Wsdl" ID="0b449134-e92d-4016-827a-99967d00a23f" SourceId="1" SourceUrl="http://localhost:51428/CatalagosService.svc?wsdl" />
+    <MetadataFile FileName="CatalagosService1.xsd" MetadataType="Schema" ID="82bdd667-7283-432a-8b8b-ec8e0a14b4c0" SourceId="1" SourceUrl="http://localhost:51428/CatalagosService.svc?xsd=xsd0" />
+    <MetadataFile FileName="CatalagosService2.xsd" MetadataType="Schema" ID="ec0da8b4-5110-4d91-a826-d3f2557561b8" SourceId="1" SourceUrl="http://localhost:51428/CatalagosService.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
